@@ -4,6 +4,7 @@ public class Duende extends Thread {
 
     @Override
     public void run() {
+        
         try {
             Semaforos.mutex.acquire();
             Semaforos.duendes += 1;

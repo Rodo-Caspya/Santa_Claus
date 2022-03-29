@@ -13,6 +13,7 @@ public class Reno extends Thread {
             }
             Semaforos.mutex.release();
             Semaforos.renosSem.acquire();
+            
             engancharTrineo();
         } catch (InterruptedException e) {
             e.printStackTrace();
